@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <Button
+        android:id="@+id/submitID"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/botton_bg"
+        android:text="新增"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlAddImageOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ListView
+                android:id="@+id/lvAdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null">
+
+            </ListView>
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivAddImage1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                fresco:placeholderImage="@drawable/add_image"
+                fresco:roundedCornerRadius="5dp"
+                fresco:viewAspectRatio="1" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivAddImage2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:scaleType="fitXY"
+                fresco:placeholderImage="@drawable/add_image"
+                fresco:roundedCornerRadius="5dp"
+                fresco:viewAspectRatio="1"
+                android:visibility="invisible"
+                />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivAddImage3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="230dp"
+                android:scaleType="fitXY"
+                fresco:placeholderImage="@drawable/add_image"
+                fresco:roundedCornerRadius="5dp"
+                fresco:viewAspectRatio="1"
+                android:visibility="invisible"
+                />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivAddImage4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="340dp"
+                android:scaleType="fitXY"
+                fresco:placeholderImage="@drawable/add_image"
+                fresco:roundedCornerRadius="5dp"
+                fresco:viewAspectRatio="1"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

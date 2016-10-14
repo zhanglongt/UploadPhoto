@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/svAddImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                fresco:placeholderImage="@drawable/add_image"
+                fresco:viewAspectRatio="1"
+                fresco:roundedCornerRadius="10dp"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/ivRoundDelete0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/svAddImage"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/svAddImage"
+                android:layout_gravity="right"
+                android:layout_marginRight="-5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/round_delete"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
